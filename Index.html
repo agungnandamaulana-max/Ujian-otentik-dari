@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Informatika Kelas 8 - Semester 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0061ff, #60efff);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #0044b3;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #0056d6;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #e0e8f5;
+            padding-bottom: 0.4rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+        .quiz-box {
+            background-color: #eef5ff;
+            border-left: 5px solid #0061ff;
+        }
+        button {
+            background-color: #0061ff;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0044b3;
+        }
+        #hasil-kuis {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portal Belajar Informatika</h1>
+        <p>Materi Ringkas Kelas VIII - Semester 1 (Kurikulum Merdeka)</p>
+    </header>
+
+    <nav>
+        <a href="#bab1">Berpikir Komputasional</a>
+        <a href="#bab2">TIK</a>
+        <a href="#bab3">Sistem Komputer</a>
+        <a href="#bab4">Jaringan Internet</a>
+        <a href="#kuis">Kuis Singkat</a>
+    </nav>
+
+    <div class="container">
+        <!-- Profil Siswa -->
+        <div class="card">
+            <h2>Identitas Pembuat</h2>
+            <p><strong>Nama:</strong> agung nanda maulana</p>
+            <p><strong>Kelas:</strong> VIII B - 8B</p>
+            <p><strong>Sekolah:</strong> smp 2 cikembar</p>
+        </div>
+
+        <!-- Bab 1 -->
+        <div class="card" id="bab1">
+            <h2>1. Berpikir Komputasional (BK)</h2>
+            <p>Berpikir komputasional adalah cara menyelesaikan masalah secara sistematis, logis, dan efisien seperti cara kerja komputer.</p>
+            <ul>
+                <li><strong>Fungsi:</strong> Memetakan setiap elemen dari himpunan input ke tepat satu elemen pada himpunan output.</li>
+                <li><strong>Himpunan dan Sistem Bilangan:</strong> Mengenal konversi bilangan Desimal (basis 10), Biner (basis 2), dan Oktal (basis 8).</li>
+                <li><strong>Algoritma & Struktur Data:</strong> Memahami konsep tumpukan (<em>Stack</em> - LIFO) dan antrean (<em>Queue</em> - FIFO).</li>
+            </ul>
+        </div>
+
+        <!-- Bab 2 -->
+        <div class="card" id="bab2">
+            <h2>2. Teknologi Informasi dan Komunikasi (TIK)</h2>
+            <p>Fokus pada pemanfaatan perangkat lunak aplikasi perkantoran untuk mengolah dokumen, angka, dan presentasi secara terpadu.</p>
+            <ul>
+                <li><strong>Integrasi Konten:</strong> Menggabungkan objek dari aplikasi pengolah angka (Excel/Sheets) ke pengolah kata (Word/Docs) atau presentasi (PowerPoint/Slides).</li>
+                <li><strong>Fitur Lanjut:</strong> Membuat daftar isi otomatis, <em>Mail Merge</em>, serta grafik visualisasi data.</li>
+            </ul>
+        </div>
+
+        <!-- Bab 3 -->
+        <div class="card" id="bab3">
+            <h2>3. Sistem Komputer (SK)</h2>
+            <p>Sistem komputer terdiri atas perangkat keras (<em>Hardware</em>), perangkat lunak (<em>Software</em>), dan pengguna (<em>Brainware</em>).</p>
+            <ul>
+                <li><strong>Komponen Utama:</strong> Unit Pemrosesan (CPU), Memori (RAM/ROM), Perangkat Input (Keyboard, Mouse), dan Output (Monitor, Printer).</li>
+                <li><strong>Pengalamatan Memori:</strong> Memahami bagaimana komputer menyimpan dan mengakses data menggunakan sistem bilangan heksadesimal.</li>
+            </ul>
+        </div>
+
+        <!-- Bab 4 -->
+        <div class="card" id="bab4">
+            <h2>4. Jaringan Komputer dan Internet (JKI)</h2>
+            <p>Mempelajari bagaimana perangkat saling terhubung untuk bertukar data dengan aman.</p>
+            <ul>
+                <li><strong>Jenis Jaringan:</strong> LAN (Jaringan Lokal), MAN (Antar Kota), dan WAN/Internet (Global).</li>
+                <li><strong>Komunikasi Data:</strong> Proses pengiriman data melalui kabel maupun nirkabel (Wi-Fi, Bluetooth, Seluler).</li>
+                <li><strong>Keamanan Internet:</strong> Menggunakan kata sandi yang kuat dan mewaspadai tautan <em>phishing</em>.</li>
+            </ul>
+        </div>
+
+        <!-- Kuis Interaktif -->
+        <div class="card quiz-box" id="kuis">
+            <h2>Kuis Uji Pemahaman</h2>
+            <p><strong>Pertanyaan:</strong> Sistem bilangan yang hanya menggunakan angka 0 dan 1 disebut sistem bilangan...</p>
+            <div style="margin-top: 8px;">
+                <input type="radio" name="jawaban" id="a" value="salah"> <label for="a">Desimal</label><br>
+                <input type="radio" name="jawaban" id="b" value="benar"> <label for="b">Biner</label><br>
+                <input type="radio" name="jawaban" id="c" value="salah"> <label for="c">Oktal</label><br>
+            </div>
+            <button onclick="cekJawaban()">Periksa Jawaban</button>
+            <p id="hasil-kuis"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tugas Informatika Kelas 8 | Dibuat menggunakan HTML, CSS, & JavaScript</p>
+    </footer>
+
+    <script>
+        function cekJawaban() {
+            const pilihan = document.querySelector('input[name="jawaban"]:checked');
+            const hasil = document.getElementById('hasil-kuis');
+            
+            if (!pilihan) {
+                hasil.style.color = "#d9534f";
+                hasil.textContent = "Silakan pilih salah satu jawaban terlebih dahulu!";
+                return;
+            }
+
+            if (pilihan.value === "benar") {
+                hasil.style.color = "#28a745";
+                hasil.textContent = "Benar! Sistem bilangan biner hanya terdiri dari angka 0 dan 1.";
+            } else {
+                hasil.style.color = "#d9534f";
+                hasil.textContent = "Kurang tepat. Coba periksa kembali materi Berpikir Komputasional!";
+            }
+        }
+    </script>
+
+</body>
+</html>
